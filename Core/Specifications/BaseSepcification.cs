@@ -4,6 +4,10 @@ namespace Core.Specifications
 {
     public class BaseSepcification<T> : ISpecification<T>
     {
+        public BaseSepcification()
+        {
+        }
+
         public BaseSepcification(Expression<Func<T, bool>> criteria)
         {
             Criteria = criteria;
